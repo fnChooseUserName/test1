@@ -4,19 +4,18 @@ phases:
   install:
     runtime-versions:
       nodejs: latest
-    commands:
-      - npm uninstall tsup
-      - npm install -g typescript
-      - npm install -g tsup
-      - npm ci
+    commands: 
+      - npm i -g typescript
+      - npm i
   
   build: 
     commands:
-      - npm run build
+      - tsc
 
 artifacts:
   files:
     - package.json
+    - package-lock.json
     - 'dist/**/*'
     - '.platform/**/*'      # AWS EB config files
     - '.ebextensions/**/*' # AWS EB config files
