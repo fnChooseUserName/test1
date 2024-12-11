@@ -7,7 +7,7 @@ phases:
     commands:
       - npm uninstall typescript
       - npm install -g typescript
-      - npm install
+      - npm ci
   
   build: 
     commands:
