@@ -16,7 +16,6 @@ phases:
 artifacts:
   files:
     - package.json
-    - tsconfig.json
     - 'dist/**/*'
     - '.platform/**/*'      # AWS EB config files
     - '.ebextensions/**/*' # AWS EB config files
