@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "src/server.js",
   "scripts": {
-    "build": "tsc",
+    "build": "tsup",
     "dev": "nodemon src/server.ts",
     "start": "npm run build && node dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,8 +14,9 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
-    "typescript": "^5.7.2",
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
+    "typescript": "^5.7.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",

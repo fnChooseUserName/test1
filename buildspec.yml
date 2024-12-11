@@ -5,8 +5,9 @@ phases:
     runtime-versions:
       nodejs: latest
     commands:
-      - npm uninstall typescript
+      - npm uninstall tsup
       - npm install -g typescript
+      - npm install -g tsup
       - npm ci
   
   build: 
