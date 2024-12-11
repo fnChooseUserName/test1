@@ -1,11 +1,11 @@
 {
   "name": "test1",
   "version": "1.0.0",
-  "main": "src/server.js",
+  "main": "dist/server.js",
   "scripts": {
     "build": "tsc --project tsconfig.build.json",
-    "dev": "nodemon src/server.ts",
-    "start": "node dist/server.js"
+    "start": "node dist/server.js",
+    "dev": "nodemon src/server.ts"
   },
   "author": "",
   "license": "ISC",
