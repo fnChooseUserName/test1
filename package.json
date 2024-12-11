@@ -23,5 +23,11 @@
     "@types/node": "^22.10.2",
     "concurrently": "^9.1.0",
     "nodemon": "^3.1.7"
+  },
+  "tsup": {
+    "entry": ["src", "!src/**/__tests__/**", "!src/**/*.test.*"],
+    "splitting": false,
+    "sourcemap": true,
+    "clean": true
   }
 }
