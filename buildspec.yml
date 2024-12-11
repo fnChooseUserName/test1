@@ -5,16 +5,16 @@ phases:
     runtime-versions:
       nodejs: latest
     commands:
-      - npm install -g yarn typescript
-      - yarn install
+      - npm uninstall typescript
+      - npm install -g typescript
+      - npm install
   
   build: 
     commands:
-      - yarn build
+      - npm run build
 
 artifacts:
   files:
-    - yarn.lock
     - package.json
     - 'dist/**/*'
     - '.platform/**/*'      # AWS EB config files
